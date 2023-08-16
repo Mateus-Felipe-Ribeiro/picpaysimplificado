@@ -1,12 +1,14 @@
 package com.picpaysimplificado.domain.transaction;
 
 import jakarta.persistence.Entity;
+import java.math.BigDecimal;
 
 @Entity(name="transactions")
 @Table(name="transactions")
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(of="id")
 public class Transaction {
     @Id
